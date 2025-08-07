@@ -1,7 +1,7 @@
 [project]
-name = "blendx-hub"
+name = "dummy"
 version = "0.1.0"
-description = "BlendX HUB"
+description = "Dummy API"
 authors = [
     {name = "Nahuel Larenas", email = "nahuel.larenas@blend360.com"},
 ]
