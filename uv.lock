@@ -54,44 +54,6 @@ wheels = [
 ]
 
 [[package]]
-name = "blendx-hub"
-version = "0.1.0"
-source = { editable = "." }
-dependencies = [
-    { name = "fastapi" },
-    { name = "pydantic" },
-    { name = "uvicorn" },
-]
-
-[package.optional-dependencies]
-dev = [
-    { name = "black" },
-    { name = "isort" },
-    { name = "mypy" },
-    { name = "pytest" },
-]
-
-[package.dev-dependencies]
-dev = [
-    { name = "pre-commit" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "black", marker = "extra == 'dev'", specifier = ">=23.0.0" },
-    { name = "fastapi", specifier = ">=0.104.0" },
-    { name = "isort", marker = "extra == 'dev'", specifier = ">=5.12.0" },
-    { name = "mypy", marker = "extra == 'dev'", specifier = ">=1.0.0" },
-    { name = "pydantic", specifier = ">=2.4.2" },
-    { name = "pytest", marker = "extra == 'dev'", specifier = ">=7.0.0" },
-    { name = "uvicorn", specifier = ">=0.23.2" },
-]
-provides-extras = ["dev"]
-
-[package.metadata.requires-dev]
-dev = [{ name = "pre-commit", specifier = ">=4.2.0" }]
-
-[[package]]
 name = "cfgv"
 version = "3.4.0"
 source = { registry = "https://pypi.org/simple" }
@@ -129,6 +91,44 @@ sdist = { url = "https://files.pythonhosted.org/packages/96/8e/709914eb2b5749865
 wheels = [
     { url = "https://files.pythonhosted.org/packages/33/6b/e0547afaf41bf2c42e52430072fa5658766e3d65bd4b03a563d1b6336f57/distlib-0.4.0-py2.py3-none-any.whl", hash = "sha256:9659f7d87e46584a30b5780e43ac7a2143098441670ff0a49d5f9034c54a6c16", size = 469047 },
 ]
+
+[[package]]
+name = "dummy"
+version = "0.1.0"
+source = { editable = "." }
+dependencies = [
+    { name = "fastapi" },
+    { name = "pydantic" },
+    { name = "uvicorn" },
+]
+
+[package.optional-dependencies]
+dev = [
+    { name = "black" },
+    { name = "isort" },
+    { name = "mypy" },
+    { name = "pytest" },
+]
+
+[package.dev-dependencies]
+dev = [
+    { name = "pre-commit" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "black", marker = "extra == 'dev'", specifier = ">=23.0.0" },
+    { name = "fastapi", specifier = ">=0.104.0" },
+    { name = "isort", marker = "extra == 'dev'", specifier = ">=5.12.0" },
+    { name = "mypy", marker = "extra == 'dev'", specifier = ">=1.0.0" },
+    { name = "pydantic", specifier = ">=2.4.2" },
+    { name = "pytest", marker = "extra == 'dev'", specifier = ">=7.0.0" },
+    { name = "uvicorn", specifier = ">=0.23.2" },
+]
+provides-extras = ["dev"]
+
+[package.metadata.requires-dev]
+dev = [{ name = "pre-commit", specifier = ">=4.2.0" }]
 
 [[package]]
 name = "fastapi"
